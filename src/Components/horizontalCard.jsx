@@ -29,43 +29,43 @@ export const HorizontalCard = ({product}) => {
     }
 
   return (
-    <div class="card-horizontal-wrapper">
-      <div class="horizontal-card">
-        <div class="card-horizontal-image">
-          <img class="img-cards" src={product.img} alt="img" />
-          <span class="badge-new hide">New</span>
-          <span class="delete-icon hide">&times;</span>
+    <div className="card-horizontal-wrapper">
+      <div className="horizontal-card">
+        <div className="card-horizontal-image">
+          <img className="img-cards" src={product.img} alt="img" />
+          <span className="badge-new hide">New</span>
+          <span className="delete-icon hide">&times;</span>
         </div>
-        <div class="card-details">
-          <div class="card-item">
-            <h1 class="card-product-name">{product.title}</h1>
-            <span class="icon-card icon-heart">
-              <i class="fas fa-heart"></i>
+        <div className="card-details">
+          <div className="card-item">
+            <h1 className="card-product-name">{product.title}</h1>
+            <span className="icon-card icon-heart">
+              <i className="fas fa-heart"></i>
             </span>
           </div>
-          <div class="card-price">
+          <div className="card-price">
             Rs.
-            <span class="price">{product.price}</span>
+            <span className="price">{product.price}</span>
             <br />
             <br />
-            <button onClick={() => increaseQuantity(product)} className="qty">+</button>
-            <span class="price">Quantity : {product.qty}</span>
-            <button onClick={() => decreaseQuantity(product)} className="qty">-</button>
+            <button onClick={() => increaseQuantity(product)} classNameName="qty">+</button>
+            <span className="price">Quantity : {product.qty}</span>
+            <button onClick={() => decreaseQuantity(product)} classNameName="qty">-</button>
           </div>
-          <div class="card-btn">
+          <div className="card-btn">
               {
                   cartState.cartItems.find(item => item.id == product.id)
                   ?
-                  <button onClick={() => removeFromCartHandler(product)} class="btn-card btn-primary-card">
-                    <span class="icon-card">
-                        <i class="fas fa-shopping-cart"></i>
+                  <button onClick={() => removeFromCartHandler(product)} className="btn-card btn-primary-card">
+                    <span className="icon-card">
+                        <i className="fas fa-shopping-cart"></i>
                     </span>
                     Remove from cart
                   </button>
                   :
-                  <button onClick={() => addToCartHandler(product)} class="btn-card btn-primary-card">
-                    <span class="icon-card">
-                        <i class="fas fa-shopping-cart"></i>
+                  <button onClick={() => addToCartHandler(product)} className="btn-card btn-primary-card">
+                    <span className="icon-card">
+                        <i className="fas fa-shopping-cart"></i>
                     </span>
                     Add to Cart
                   </button>
@@ -73,18 +73,18 @@ export const HorizontalCard = ({product}) => {
               }
 
               {
-                  cartState.saveLaterItems.find(item => item.id == product.id)
+                  cartState.saveLaterItems.find(item => item.id === product.id)
                   ?
-                  <button onClick={() => removeFromSavedHandler(product)} class="btn-card btn-wishlist">
-                    <span class="icon-card">
-                        <i class="fas fa-shopping-cart"></i>
+                  <button onClick={() => removeFromSavedHandler(product)} className="btn-card btn-wishlist">
+                    <span className="icon-card">
+                        <i className="fas fa-shopping-cart"></i>
                     </span>
                     Remove from saved
                 </button>
                 :
-                <button onClick={() => saveToLaterHandler(product)} class="btn-card btn-wishlist">
-                <span class="icon-card">
-                    <i class="fas fa-shopping-cart"></i>
+                <button onClick={() => saveToLaterHandler(product)} className="btn-card btn-wishlist">
+                <span className="icon-card">
+                    <i className="fas fa-shopping-cart"></i>
                 </span>
                 Save for later
                 </button>
