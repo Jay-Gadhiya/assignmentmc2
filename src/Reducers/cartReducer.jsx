@@ -7,7 +7,7 @@ export const cartReducer = (state, action) => {
                 ...state,
                 cartItems : [...state.cartItems, action.payload],
                 totalPrice : [...state.cartItems, action.payload].reduce((acc, curr) => acc + curr.price ,0) - 50,
-                saveLaterItems : state.saveLaterItems.filter(item => item.id != action.payload.id),
+                saveLaterItems : state.saveLaterItems.filter(item => item.id !== action.payload.id),
                 // state.totalPrice + (action.payload.price * action.payload.qty) - 50
             }
 
@@ -28,7 +28,7 @@ export const cartReducer = (state, action) => {
         case "REMOVE_FROM_CART":
             return {
                 ...state,
-                cartItems : state.cartItems.filter(item => item.id != action.payload.id),
+                cartItems : state.cartItems.filter(item => item.id !== action.payload.id),
                 totalPrice : state.totalPrice - action.payload.price * action.payload.qty,
                 saveLaterItems : state.saveLaterItems.filter(item => item.id != action.payload.id),
             }
@@ -36,7 +36,7 @@ export const cartReducer = (state, action) => {
         case "SAVE_FOR_LATER":
             return {
                 ...state,
-                cartItems : state.cartItems.filter(item => item.id != action.payload.id),
+                cartItems : state.cartItems.filter(item => item.id !== action.payload.id),
                 totalPrice : state.totalPrice - action.payload.price * action.payload.qty,
                 saveLaterItems : [...state.saveLaterItems, action.payload]
             }
@@ -44,7 +44,7 @@ export const cartReducer = (state, action) => {
         case "REMOVE_FROM_SAVED":
             return {
                 ...state,
-                saveLaterItems : state.saveLaterItems.filter(item => item.id != action.payload.id),
+                saveLaterItems : state.saveLaterItems.filter(item => item.id !== action.payload.id),
             }
             
         default:
