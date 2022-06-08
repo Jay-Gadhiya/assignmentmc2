@@ -1,0 +1,37 @@
+
+.main-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 24rem;
+}
+
+.goto {
+    padding: 10px 12px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    color: white;
+    margin-right: 5rem;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e2effa;
+    padding: 1rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.c2 {
+    background-color: #5dadee;
+}

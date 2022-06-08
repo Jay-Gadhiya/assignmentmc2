@@ -1,0 +1,40 @@
+
+.cart-main-wrapper {
+    margin: 2rem;
+    display: flex;
+    gap: 6rem;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-horizontal-wrapper {
+    width: 100%;
+    max-width: 25rem;
+}
+
+.qty {
+    width: 1.4rem;
+    margin: 3px;
+}
+
+.price-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price-det {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+}
+
+.saved-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "title" : "Men Varsity Jacket",
+        "price" : 100,
+        "size" : "s",
+        "gender" : "man",
+        "id" : "1",
+        "img" : "https://rukminim1.flixcart.com/image/800/960/jvtujrk0/jacket/y/9/g/xxl-6832172-wrogn-original-imafgmths5fxjgv7.jpeg?q=50",
+        "qty" : 1
+    },
+    {
+        "title" : "Round Neck Blue T-Shirt",
+        "price" : 200,
+        "size" : "m",
+        "gender" : "man",
+        "id" : "2",
+        "img" : "https://rukminim1.flixcart.com/image/800/960/l3bx5e80/t-shirt/1/b/w/xl-ts1-vebnor-original-imagegzdpgsmawfs.jpeg?q=50",
+        "qty" : 1
+    },
+    {
+        "title" : "Round Neck Red T-Shirt",
+        "price" : 300,
+        "size" : "l",
+        "gender" : "man",
+        "id" : "3",
+        "img" : "https://rukminim1.flixcart.com/image/800/960/kkfrjww0/t-shirt/o/5/f/m-praw20cn023c-provogue-original-imafzshka4rgvweh.jpeg?q=50",
+        "qty" : 1
+    },
+    {
+        "title" : "Women Round Neck",
+        "price" : 400,
+        "size" : "xl",
+        "gender" : "woman",
+        "id" : "4",
+        "img" : "https://rukminim1.flixcart.com/image/800/960/l13whow0/t-shirt/8/r/k/s-bulati-hai-magar-jane-ka-nahi-stylotrendz-original-imagcqsvnuv7uuhh.jpeg?q=50",
+        "qty" : 1
+    },
+    {
+        "title" : "wrangler Round tshirt",
+        "price" : 500,
+        "size" : "s",
+        "gender" : "man",
+        "id" : "5",
+        "img" : "https://rukminim1.flixcart.com/image/496/595/l0r1j0w0/t-shirt/v/b/m/m-wmts003647-wrangler-original-imagchyyrmhekkyg.jpeg?q=50",
+        "qty" : 1
+    },
+    {
+        "title" : "Striped Round tshirt",
+        "price" : 600,
+        "size" : "m",
+        "gender" : "woman",
+        "id" : "6",
+        "img" : "https://rukminim1.flixcart.com/image/800/960/kyhlfgw0/t-shirt/o/r/f/s-t436-as20whxbvr-eyebogler-original-imagap7tbt9wkugy.jpeg?q=50",
+        "qty" : 1
+    }
+]
