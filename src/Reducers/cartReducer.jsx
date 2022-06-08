@@ -40,6 +40,12 @@ export const cartReducer = (state, action) => {
                 totalPrice : state.totalPrice - action.payload.price * action.payload.qty,
                 saveLaterItems : [...state.saveLaterItems, action.payload]
             }
+
+        case "REMOVE_FROM_SAVED":
+            return {
+                ...state,
+                saveLaterItems : state.saveLaterItems.filter(item => item.id != action.payload.id),
+            }
             
         default:
             return state;

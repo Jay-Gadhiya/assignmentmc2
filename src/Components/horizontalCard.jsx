@@ -24,6 +24,10 @@ export const HorizontalCard = ({product}) => {
         cartDispatch({type : "ADD_TO_CART", payload : item});
     }
 
+    const removeFromSavedHandler = (item) => {
+        cartDispatch({type : "REMOVE_FROM_SAVED", payload : item});
+    }
+
   return (
     <div class="card-horizontal-wrapper">
       <div class="horizontal-card">
@@ -71,11 +75,11 @@ export const HorizontalCard = ({product}) => {
               {
                   cartState.saveLaterItems.find(item => item.id == product.id)
                   ?
-                  <button onClick={() => removeFromCartHandler(product)} class="btn-card btn-wishlist">
+                  <button onClick={() => removeFromSavedHandler(product)} class="btn-card btn-wishlist">
                     <span class="icon-card">
                         <i class="fas fa-shopping-cart"></i>
                     </span>
-                    Remove from cart
+                    Remove from saved
                 </button>
                 :
                 <button onClick={() => saveToLaterHandler(product)} class="btn-card btn-wishlist">
